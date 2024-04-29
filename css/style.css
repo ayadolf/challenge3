@@ -8,7 +8,6 @@
 }
 
 img {
-  max-width: 100%;
   width: 100%;
 }
 
@@ -24,9 +23,9 @@ p {
 html {
   font-size: 15px;
 }
-
+/*créer une mise en page réactive et bien organisée*/
 body {
-  max-width: 1200px;
+  max-width: 1200px;/* s'assurer que le contenu reste lisible et bien disposé, même sur des écrans larges.*/
   margin: auto;
   padding-bottom: 4rem;
 }
@@ -41,17 +40,14 @@ body {
 .header nav #menu-close {
   background: transparent;
   border: none;
-  outline: none;
   position: absolute;
   right: 1.25rem;
   top: 1.25rem;
-  z-index: 99999;
-  cursor: pointer;
 }
 
 .header nav {
   opacity: 0;
-  z-index: -999;
+  z-index: -999;/*Cette propriété contrôle la position de l'élément dans la pile z, qui détermine quel élément est affiché par-dessus ou par-dessous des autres éléments.*/
 }
 
 .header nav.open {
@@ -75,7 +71,6 @@ body {
 .header nav ul li {
   margin: 1.5rem 0;
   font-size: 16px;
-  cursor: pointer;
 }
 
 .header nav ul li:hover {
@@ -86,7 +81,6 @@ body {
   background: transparent;
   outline: none;
   border: none;
-  cursor: pointer;
 }
 
 .showcase {
@@ -112,15 +106,12 @@ body {
   font-size: 1rem;
   font-weight: 700;
   border: none;
-  outline: none;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  transition: all 0.3s ease-in-out;
 }
 
 .showcase div:first-child article button:hover {
   background-color: hsl(240, 100%, 5%);
-  cursor: pointer;
 }
 
 .showcase > div:last-child {
@@ -148,7 +139,6 @@ body {
 
 .showcase > div:last-child h3:hover {
   color: hsl(35, 77%, 62%);
-  cursor: pointer;
 }
 
 .cards {
@@ -172,7 +162,7 @@ body {
   color: hsl(236, 13%, 42%);
   font-weight: bold;
   font-size: 2rem;
-  opacity: 75%;
+  opacity: 75%;/*porcentage de lisibilité */
 }
 
 .cards article h4 {
@@ -200,15 +190,7 @@ body {
     width: 100%;
   }
 
-  .header nav.open {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: auto;
-    background-color: transparent;
-    padding: 0;
-    z-index: auto;
-  }
+ 
 
   .header nav #menu-close {
     display: none;
